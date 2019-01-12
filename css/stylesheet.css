@@ -1,0 +1,626 @@
+/*THIS IS A CSS RESET
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*HTML 5 reset for older browsers
+*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  BODY
+  ========================================
+*/
+
+@font-face { 
+	font-family: "Museosans 900"; 
+	font-style: normal; 
+	font-weight: 900; 
+	src: url(../fonts/MuseoSans_900.otf) format("opentype"); 
+}
+
+@font-face {
+	font-family: "Averta"; 
+	font-style: normal; 
+	font-weight: 400;
+	src: url(../fonts/averta-regular-webfont.woff);
+}
+
+@font-face {
+	font-family: "Averta"; 
+	font-style: normal; 
+	font-weight: 300;
+	src: url(../fonts/averta-light-webfont.woff);
+}
+
+
+@font-face {
+	font-family: "Product Sans Bold"; 
+	font-style: bold; 
+	font-weight: 700;
+	src: url(../fonts/product-sans-bold.ttf);
+}
+
+@font-face {
+	font-family: "Product Sans"; 
+	font-style: normal; 
+	font-weight: 300;
+	src: url(../fonts/product-sans-regular.ttf);
+}
+
+body{
+	 font-family: 'Product Sans' ,sans-serif;
+		color: #333333;
+}
+
+
+/*==========================================
+PRE LOADER 
+==========================================*/
+.preloader{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fefefe;
+    z-index:99999;
+    height:100%;
+    width:100%;
+    overflow:hidden !important;
+}
+.loaded{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    background-image:url(../images/icons/loading.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    margin:-20px 0 0 -20px;
+}
+
+/*
+  ========================================
+  RESPONSIVE LOADER
+  ========================================
+*/
+@media only screen and (max-width: 500px) {
+    .loaded {
+        left: 44%;
+        top: 50%;
+    } 
+}
+
+
+/*
+  ========================================
+  GRID OF TWO
+  ========================================
+*/
+
+
+.first{
+    width: 35%;
+}
+
+.second{
+    width: 65%;
+}
+
+/*
+  ========================================
+  FIRST SECTION
+  ========================================
+*/
+
+.first{
+    background: #FDFCFC;
+    height: 650px;
+    position: fixed;
+}
+
+.first .text{
+    padding: 60px 80px 20px 80px;
+}
+
+.first h1{
+    font-family: 'Product Sans Bold';
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.first p{
+    font-family: 'Product Sans';
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+
+.first .text h2{
+    color: #444444;
+}
+
+
+/*
+  ========================================
+  ANIMATION DELAY
+  ========================================
+*/
+
+.social{
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.text h1{
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.text p{
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.first .button{
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.second .projects{
+    webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+
+/*
+  ========================================
+  FIRST SECTION SOCIAL BUTTONS
+  ========================================
+*/
+.social nav ul{
+    padding: 10px 90px;
+}
+
+.social nav ul li {
+    display: inline-block;
+    margin: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.social a{
+    color: #999;
+}
+
+.social .github:hover{
+    color: #444;
+}
+
+
+.social .twitter:hover{
+    color: #0084B4;
+}
+
+
+.social .linkedin:hover{
+    color: #0E76A8;
+}
+
+/*
+  ========================================
+  FIRST SECTION BUTTON
+  ========================================
+*/
+
+.button{
+    padding: 40px 0 20px 80px;
+}
+
+.btn{
+    border: 1px solid #005BA9;
+    padding: 12px 50px; 
+    background: #005BA9;
+}
+
+.button a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.btn:hover{
+    border: 1px solid #006DCC;
+    background: #006DCC;
+}
+
+
+/*
+  ========================================
+  FIRST MEDIA QUERY
+  ========================================
+*/
+@media only screen and (max-width: 1167px){
+    .first .text{
+    padding: 50px 40px 20px 40px;
+    }
+    
+    .first h1{
+        font-size: 36px;
+    }
+    
+    .button{
+    padding: 20px 0 20px 30px;
+    }
+    
+    .social nav ul{
+    padding: 10px 30px;
+    }
+}
+
+
+@media only screen and (max-width: 910px){
+    .first .text{
+        padding: 50px 30px 10px 30px;
+    }
+    
+    .button{
+        padding: 20px 0 20px 30px;
+    }
+    
+    .social nav ul{
+        padding: 10px 45px;
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+	.first {
+		width: 100%;
+        position: static;
+	}
+    
+    .first .text{
+        padding: 100px 80px 20px 80px;
+    }
+    
+    .social nav ul{
+        padding: 5px 40px;
+    }
+    
+    .button{
+        padding: 40px 0 20px 90px;
+    }
+
+	.second {
+        float: none;
+		width: 100%; 
+	}
+    
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .first {
+		width: 100%;
+        position: static;
+	}
+    
+    .first .text{
+        padding: 90px 60px 20px 60px;
+    }
+    
+    .social nav ul{
+        padding: 5px 40px;
+    }
+    
+    .button{
+        padding: 40px 0 20px 60px;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px){
+    .first {
+		width: 100%;
+        position: static;
+	}
+    
+    .first h1{
+        font-size: 35px;
+    }
+    
+    .first p{
+        font-size: 16px;
+    }
+    
+    .first .text{
+        padding: 50px 40px 20px 40px;
+    }
+    
+    .social nav ul{
+        padding: 5px 40px;
+    }
+    
+    .button{
+        padding: 40px 0 20px 40px;
+    }
+    
+    .footer{
+        font-size: 12px;
+    }
+    
+}
+
+
+/*
+  ========================================
+    SECTIONS
+  ========================================
+*/
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*
+  ========================================
+  GROUPS
+  ========================================
+*/
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*
+  ========================================
+  GRID COLUMN SETUP
+  ========================================
+*/
+
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 0 0;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 0 0 0 0%;
+	}
+}
+
+
+/*
+  ========================================
+  SECOND SECTION
+  ========================================
+*/
+
+.second{
+    float: right;
+}
+
+.second a{
+    text-decoration: none;
+}
+
+.project{
+    height: 680px;
+}
+
+.project1{
+    background-color:  #005BA9;
+    
+}
+
+.project2{
+    background-color: #54E7C7;
+}
+
+.project3{
+    background-color: #4A4A4A;
+}
+
+.project4{
+    background-color: #ED7A8F;
+}
+
+.project5{
+    background-color: #8E24AA;
+}
+
+.project6{
+    background-color: #24a89b;
+}
+
+.project7{
+    background-color: #F2F2F2;
+}
+
+.black-content h2,
+.black-content p{
+    color: #111517 !important;
+}
+
+.image{
+    text-align: center;
+}
+
+.project1 img,
+.project3 img,
+.project4 img,
+.project5 img,
+.project6 img,
+.project7 img{
+    box-shadow: 0 10px 15px rgba(0,0,0,0.40), 0 15px 20px rgba(0,0,0,0.50);
+    width: 90%;
+    margin: 80px 0; 
+}
+
+.project2 img{
+    width: 28%;
+    margin: 50px 0 60px 0;
+    
+}
+
+.project h2{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0 0 5px 30px;
+}
+
+.project p{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 0  0 30px 30px;
+}
+
+
+/*
+  ========================================
+  SECOND SECTION MEDIA QUERIES
+  ========================================
+*/
+
+
+@media only screen and (max-width: 1273px){
+    .project{
+        height: inherit;
+    }
+    
+}
+    
+    
+@media only screen and (max-width: 480px){
+    
+     .project{
+        height: inherit;
+    }
+}
+
+.bottom{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 200px 0 200px 0;
+}
+
+.first-bottom{
+    font-family: 'Averta' ,sans-serif;  
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.second-bottom{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #999999;
+    padding-bottom: 20px;
+}
+
+.third-bottom, 
+.fourth-bottom{
+    font-family: 'Averta' ,sans-serif;  
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/*
+  ========================================
+  FOOTER  
+  ========================================
+*/
+
+.footer{
+    background: #444;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+small{
+    font-size: 14px;
+    font-weight: 300;
+}
+

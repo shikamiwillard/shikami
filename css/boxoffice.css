@@ -1,0 +1,344 @@
+/*THIS IS A CSS RESET
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*HTML 5 reset for older browsers
+*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  BODY
+  ========================================
+*/
+
+@font-face { 
+	font-family: "Museosans 900"; 
+	font-style: normal; 
+	font-weight: 900; 
+	src: url(../fonts/MuseoSans_900.otf) format("opentype"); 
+}
+
+@font-face {
+	font-family: "Averta"; 
+	font-style: normal; 
+	font-weight: 400;
+	src: url(../fonts/averta-regular-webfont.woff);
+}
+
+@font-face {
+	font-family: "Averta"; 
+	font-style: normal; 
+	font-weight: 300;
+	src: url(../fonts/averta-light-webfont.woff);
+}
+
+@font-face {
+	font-family: "Product Sans Bold"; 
+	font-style: bold; 
+	font-weight: 700;
+	src: url(../fonts/product-sans-bold.ttf);
+}
+
+@font-face {
+	font-family: "Product Sans"; 
+	font-style: normal; 
+	font-weight: 300;
+	src: url(../fonts/product-sans-regular.ttf);
+}
+
+body{
+	 font-family: 'Product Sans Bold';
+		color: #333333;
+}
+
+
+/*==========================================
+BOX OFFICE HEADER
+==========================================*/
+.main-header{
+	width:100%; 
+}
+
+.boxoffice-header{
+	background-color: #EF5350;
+	padding: 0 0 100px 0;
+	margin: 0 auto; 
+}
+
+.close-button{
+	text-align: right;
+	padding: 40px 30px 15px 0;
+}
+
+.close-button img{
+	cursor: pointer;
+}
+
+.header-img{
+	text-align: center;
+}
+
+.header-img h1{
+	font-size: 50px;
+	font-family: 'Product Sans Bold';
+	font-weight: 700;
+	color: #FEFFFF;
+	padding: 0 0 20px 0;
+}
+
+.header-img img{
+	width: 60%;
+}
+
+/*==========================================
+PROJECT TITLE
+==========================================*/
+
+.project-title{
+	padding: 70px;
+}
+
+.project-title-content{
+	padding: 0 150px;
+}
+
+.project-title h3{
+	font-size: 30px;
+	font-family: 'Product Sans Bold';
+	font-weight: 700;
+}
+
+.project-title h1{
+	font-size: 50px;
+	font-family: 'Product Sans Bold';
+	font-weight: 400;
+}
+
+
+/*==========================================
+IDEA SECTION
+==========================================*/
+
+.idea-section{
+	background-color: #E6E6E6;
+	font-family: 'Product Sans';
+	padding: 80px;
+}
+
+.idea-section h4{
+	font-family: 'Museosans 900';
+	font-size: 30px;
+}
+
+.idea-section 
+.idea, 
+.study{
+	padding: 0 150px;
+}
+
+.idea-section .idea{
+	padding-bottom: 30px;
+}
+
+.idea-section p{
+	font-size: 22px;
+}
+
+/*==========================================
+SOLUTION SECTION
+==========================================*/
+.solution-section{
+	font-family: 'Averta', sans-serif;
+	padding: 70px;
+}
+
+.solution-section h1{
+	text-align: center;
+	font-family: 'Museosans 900';
+	font-size: 50px;
+	padding-bottom: 50px;
+}
+
+.solution-content{
+	padding: 50px;
+}
+
+.solution-content h3{
+	font-size: 25px;
+	font-family: 'Museosans 900';
+	position: static;
+}
+
+.solution-content p{
+	font-size: 22px;
+}
+
+.solution-img img{
+	width: 80%;
+}
+
+/*==========================================
+CONTENT SECTION Additionally, the focal outlook had to
+==========================================*/
+
+.content-section{
+	background-color: rgba(255,102,102, 0.3);
+	padding-top: 100px;
+}
+
+.content-img{
+	text-align: right;
+}
+
+.content-img img{
+	width: 80%;
+}
+
+.main-content{
+	padding: 0 100px 20px 0;
+}
+
+.main-content h4{
+	font-family: 'Museosans 900';
+}
+
+.main-content h3{
+	font-family: 'Museosans 900';
+}
+
+.main-content p{
+	font-family: 'Averta', sans-serif;
+	font-size: 20px;
+}
+
+
+/*==========================================
+INTERACTION SECTION
+==========================================*/
+.interaction{
+	background-color: #E6E6E6;
+	padding: 100px;
+	text-align: center;
+}
+
+.categories img{
+	box-shadow: 0 10px 15px rgba(0,0,0,0.40), 0 15px 20px rgba(0,0,0,0.50);
+	width: 90%;
+}
+
+.movie-list img{
+	box-shadow: 0 10px 15px rgba(0,0,0,0.40), 0 15px 20px rgba(0,0,0,0.50);
+	width: 90%;
+}
+
+.interaction-content{
+	padding: 50px 150px;
+	text-align: left;
+}
+
+.interaction-content h2{
+	font-family: 'Museosans 900';
+	font-size: 40px;
+}
+
+.interaction-content p{
+	font-family: 'Averta', sans-serif;
+	font-size: 20px;
+}
+
+/*==========================================
+ITEM PAGE SECTION
+==========================================*/
+
+.item-page{
+	background-color: rgba(153,51,0, 0.5); 
+	padding: 100px;
+	text-align: center;
+}
+
+.item-page img{
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.40);
+	width: 80%;
+}
+
+.item-content{
+	color: #FEFFFF;
+	padding: 50px 150px;
+}
+
+.item-content h2{
+	font-family: 'Museosans 900';
+	font-size: 40px;
+}
+
+.item-content p{
+	font-family: 'Averta', sans-serif;
+	font-size: 20px;
+}
+
+
+/*==========================================
+ITEM PAGE SECTION
+==========================================*/
+.final-footer{
+	background-color: #FEFFFF;
+	padding: 100px;
+	text-align: center;
+}
+
+.final-footer h2{
+	font-family: 'Museosans 900';
+	font-size: 40px;
+}
+
+
+
+
+
+/*==========================================
+RESPONSIVENESS
+==========================================*/
+@media only screen and (max-width: 1273px){
+	
+}

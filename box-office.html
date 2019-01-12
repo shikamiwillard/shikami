@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!--LATEST IE RENDERING ENGINE & CHROME FAME -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Willard Shikami - Box Office</title>
+
+  <meta name="description" content="Willard is an interactive developer with skills in AngularJS, NodeJS & ReactJS.">
+  <meta name="author" content="Willard Shikami - Frontend Web Developer">
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- RESPONSIVE AND MOBILE FRIENDLY STUFF -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--LINK TO STYLESHEETS-->
+  <link rel="stylesheet" href="css/boxoffice.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!--LINK TO BOOTSTRAP-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+
+  <!--LINK TO GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+  <!--LINK TO FONTAWSOME-->
+  <script src="https://use.fontawesome.com/a6975973c7.js">
+  </script>
+
+  <!--MOMENT JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/af.js"></script>
+
+  <!--LINK TO FAVICON-->
+  <link rel="icon" href="images/icons/favicon.png" type="image/png">
+
+  <!--LINK TO ANIMATE.CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116328995-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-116328995-2');
+  </script>
+</head>
+
+<body>
+  <div class="animated fadeIn main-header">
+    <div class="boxoffice-header">
+      <div class="close-button">
+        <a href="https://willardshikami.github.io"><img src="images/icons/close.png" alt="Close"></a>
+      </div>
+
+      <div class="header-img">
+        <h1>Box Office</h1>
+        <img src="images/boxofficeheader.png" alt="Box Office Header">
+      </div>
+    </div>
+  </div>
+
+  <div class="container animated fadeIn project-title">
+    <div class="project-title-content">
+      <h3>Project</h3>
+      <h1>UI Design for a simple movies
+        <br> web application</h1>
+    </div>
+  </div>
+
+  <div class="idea-section">
+    <div class="idea">
+      <h4>Idea</h4>
+      <p>
+        A Movies Web App for people who love movies. The Idea was to create an app that focuses mainly on keeping users up to date
+        on upcoming movies. It includes a data base that constanly updates as the new movies are revealed. I had to extend
+        the the UX to include already released movies to keep the users more engaged.
+      </p>
+    </div>
+    <div class="study">
+      <h4>Study</h4>
+      <p>The app design had to be presented to the users in a simple yet attractive and lucid way. From my analysis, the main
+        priority of the idea was to upcoming movies but to extend the functionality I had to include all points of the movies
+        ecosystem. User scenarios were created from my research to determine the flow of the design.</p>
+    </div>
+  </div>
+
+  <div class="container solution-section">
+    <h1>Solution</h1>
+    <div class="row">
+      <div class="col-md-6 solution-content">
+        <h3>Less is More</h3>
+        <p>For the home page, I went ahead and prioritized the Upcoming Movies to be the main items the user sees as soon as
+          they land on the page. Made two main sections with one being the categories where users can choose what content
+          they want to explore and the other section is where the content they choose will be displayed.</p>
+      </div>
+      <div class="col-md-6 solution-img">
+        <img src="images/boxoffice/boxoffice-home.png" alt="Box Office Home Page">
+      </div>
+    </div>
+  </div>
+  <div class="content-section">
+    <div class="container row">
+      <div class="col-md-6 content-img">
+        <img src="images/boxoffice/incredibles.png" alt="The Incredibles">
+      </div>
+      <div class="col-md-6 main-content">
+        <h4>Content</h4>
+        <h3>The goal was to make the application as informative as possible in that paticular spectrum to broaden its utility.</h3>
+        <p>The UX is sophosticated to grow the desirability for the user to go deeper into the app to discover more content</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="interaction">
+    <div class="container row">
+      <div class="col-md-6 categories">
+        <img src="images/boxoffice/category.png" alt="Categories">
+      </div>
+      <div class="col-md-6 movie-list">
+        <img src="images/boxoffice/movielist.png" alt="Movies List">
+      </div>
+    </div>
+    <div class="interaction-content">
+      <h2>Interaction</h2>
+      <p>BOXOFFICE has two main interactive sections, The category menu where users can explore movie categories and the movie list that displays movies from selected category.</p>
+    </div>
+  </div>
+
+  <div class="item-page">
+    <div class="container">
+      <img src="images/boxoffice/item-page.png" alt="Movie Page">
+    </div>
+    <div class="item-content">
+      <h2>Movie Item Page</h2>
+      <p>When you click on any particular movie item, you are presented with a creative triage of shear beauty. The page still maintains the familiarity expirienced on the previous page that included a quick access category section. The design leverages the image's color and automatically adapts the dominant color as a transparent background color of the page. I've presented the user with more information about the particular item the clicked, including the release date, the cast plus more.</p>
+    </div>
+  </div>
+  <div class="final-footer">
+    <h2>Thank you for watching</h4>
+  </div>
+</body>
+
+</html>
