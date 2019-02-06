@@ -1,2 +1,4 @@
-var currentYear = new moment().format("YYYY")
-document.getElementByClass("displayYear").innerHTML = currentYear;
+const yearNow = new Date();
+const thisYear = yearNow.getFullYear();
+
+document.getElementById('year').innerHTML = thisYear;

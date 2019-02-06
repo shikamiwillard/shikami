@@ -165,21 +165,21 @@ PRE LOADER
 }
 
 .first .text{
-    padding: 60px 80px 20px 80px;
+    padding: 150px 80px 20px 80px;
 }
 
 .first h1{
     font-family: 'Product Sans Bold';
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .first p{
     font-family: 'Product Sans';
-    font-size: 17px;
+    font-size: 2em;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 52px;
 }
 
 
@@ -480,8 +480,9 @@ PRE LOADER
     text-decoration: none;
 }
 
-.project{
-    height: 680px;
+.onesize{
+    padding: 50px 0 80px 0;
+    height: auto;
 }
 
 .project1{
